@@ -1,0 +1,124 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 260px;
+    background-color: #0d47a1;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  .sidebar h1 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  
+  .sidebar p {
+    font-size: 12px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  /* .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  } */
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .sidebar nav ul li a:hover {
+    background-color: #1565c0; /* lighter blue */
+    color: #e3f2fd; /* subtle text color change */
+    text-decoration: none; /* keep clean look */
+  }
+  
+  /* .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  } */
+  
+  .content {
+    margin-left: 260px;
+    padding: 30px;
+    width: calc(100% - 260px);
+    background: #f5f5f5;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    color: #0d47a1;
+  }
+  
+  a {
+    color: #1976d2;
+  }
+  
+  .menu-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    font-size: 24px;
+    z-index: 1000;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  /* Responsive: hide sidebar and show hamburger on mobile */
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+    }
+  
+    .sidebar.active {
+      transform: translateX(0);
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .content {
+      margin-left: 0;
+      padding: 80px 20px 20px;
+      width: 100%;
+    }
+  }

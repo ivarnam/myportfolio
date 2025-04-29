@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Namrita Varshney, Ph.D. Scholar at IIT Bombay specializing in Formal Methods for AI." />
+  <title>Namrita Varshney | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Fira Sans', sans-serif;
+    }
+
+    a:focus,
+    button:focus {
+      outline: 2px dashed #1976d2;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <aside class="sidebar" role="complementary">
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <header>
+      <div class="profile">
+        <img loading="lazy" src="profile.jpg" alt="Namrita Varshney, Ph.D. student at IIT Bombay, profile picture" />
+        <h1>Namrita Varshney</h1>
+        <p>Ph.D. Scholar, IIT Bombay</p>
+      </div>
+    </header>
+    <nav role="navigation" aria-label="Main menu">
+      <ul>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#teaching-assistant">Teaching Assistant</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content" role="main">
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>
+        I am a Ph.D. scholar at the <a href="https://www.cse.iitb.ac.in/" target="_blank">Department of Computer Science and Engineering</a>, IIT Bombay. I am affiliated with the <a href="https://www.cse.iitb.ac.in/" target="_blank">Centre for Formal Design and Verification of Software</a> and the <a href="https://trustlab.iitb.ac.in/" target="_blank">IITB Trust Lab</a>.
+
+My research focuses on Formal Methods for AI, with an emphasis on the robustness verification of machine learning models and explainable AI. I develop and analyze techniques for verifying the trustworthiness of AI systems using optimization-based approaches (e.g., MILP, SMT) and have built synthesis frameworks for formal specifications guided by large language models (LLMs) and demonstrations.
+
+I am passionate about building reliable and interpretable AI for safety-critical applications.
+        <!-- I am a Ph.D. student specializing at IITB <a href="https://www.cse.iitb.ac.in/" target="_blank">Computer Science and Engineering Department</a>.
+        I am a member of <a href="https://www.cse.iitb.ac.in/" target="_blank">Centre for Formal Design and Verification of Software Lab</a> and
+        <a href="https://trustlab.iitb.ac.in/" target="_blank">IITB Trust Lab</a>.
+        I have a broad interest in Formal Methods for AI, Robustness Verification of Machine Learning Models, and Explainable AI.
+        I am developing and studying techniques for verifying the trustworthiness of machine learning systems and have built synthesis frameworks for formal specifications using LLMs and demonstrations.
+        Passionate about advancing reliable and interpretable AI for safety-critical applications. -->
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research Experience</h2>
+      <div class="project">
+        <h3>Vikriti: Glitch Detection in Decision Trees</h3>
+        <p>Developing a MILP-based tool to detect inconsistencies in Gradient Boosted Decision Trees (GBDTs) using Gurobi.</p>
+      </div>
+      <div class="project">
+        <h3>JaNaKa: Learning LTL Specifications</h3>
+        <p>Created JaNaKa, combining LLM hypotheses and formal repairs for synthesizing Linear Temporal Logic (LTL) specifications. <a href="https://arxiv.org/abs/2404.02872" target="_blank">View Preprint</a>.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Learning cardiac pacemaker specifications from demonstrations</h3>
+        <p>MILP framework to learn Duration Calculus (DC) specifications for pacemakers from demonstrations.</p>
+      </div>
+      <div class="project">
+        <h3>Formal Verification of Protocols</h3>
+        <p>Verified Peterson’s mutual exclusion using SPIN.</p>
+      </div>
+      <div class="project">
+        <h3>Speech Emotion Detection</h3>
+        <p>Compared ML & DL models (Decision Trees, Random Forests, LSTMs) on speech data.</p>
+      </div>
+      <div class="project">
+        <h3>Solving Rubik’s cube using Z3</h3>
+        <p>Crafted a Rubik's Cube solver by devising a unique encoding strategy & leveraging the Z3 solver.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Ph.D. in Computer Science and Engineering</strong><br />Indian Institute of Technology, Bombay (2022 - Present)</li>
+        <li><strong>B.Tech. in Computer Science</strong><br />Dr. A.P.J. Abdul Kalam Technical University (2015 - 2019)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Python, C++, Gurobi, Z3, SPIN, Git, LaTeX, Promela, NuSMV, MONA, Spot</p>
+    </section>
+
+    <section id="awards">
+      <h2>Awards & Certifications</h2>
+      <ul>
+        <li>Received Best Poster Award for "JaNaKa: Learning LTL Specifications", RISC 2024</li>
+        <li>Received Award for excellence in Teaching Assistantship, Autumn Semester 2024-25, CSE, IITB</li>
+        <li>Participation in ACM-ARCS 2023, ACM-W 2023, FSTTCS 2022, RISC2023, SAT 2024, RISC 2025</li>
+        <li>Finalist: Smart India Hackathon 2018</li>
+      </ul>
+    </section>
+
+    <section id="teaching-assistant">
+      <h2>Teaching Assistant</h2>
+      <ul>
+        <li>CS433: Automated Reasoning</li>
+        <li>CS293: Data Structures & Algorithms Lab</li>
+        <li>CS213: Data Structures & Algorithms Theory</li>
+        <li>CS207: Logics for Computer Science</li>
+        <li>CS105: Discrete Structures</li>
+        <li>TrustLab Winter School 2022 on Blockchain Verification, IITB</li>
+      </ul>
+    </section>
+
+    <footer role="contentinfo">
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:namrita@iitb.ac.in">namrita@iitb.ac.in</a></p>
+        <p>
+          <a href="https://linkedin.com/in/namrita-varshney" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/ivarnam" target="_blank">GitHub</a> |
+          <a href="https://dblp.org/pid/374/8788.html" target="_blank">Google Scholar</a>
+        </p>
+      </section>
+    </footer>
+  </main>
+
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
